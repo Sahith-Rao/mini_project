@@ -128,7 +128,7 @@ class validation_dataset(Dataset):
       if(len(frames) == self.count):
         break
     frames = torch.stack(frames)
-    frames = frames[:self.count]f
+    frames = frames[:self.count]
     return frames.unsqueeze(0)
 
   def frame_extract(self, path):
